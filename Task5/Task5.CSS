@@ -1,0 +1,61 @@
+.Task_1 div
+{
+ display:inline-block;
+ justify-content: space-between;
+ box-sizing: border-box;
+ text-align: center;
+ padding: 50px 100px;
+ margin: 40px; 
+  
+}
+.Shape_1
+    {
+border: solid 5px red;
+background-color: rgb(196, 193, 193); 
+outline:black 5px solid ;
+    }
+    .Shape_2
+    {
+ border: solid 5px;
+ border-color: blue green;
+ background-color: rgb(196, 193, 193); 
+ outline:black 5px solid ;
+    }
+    .Shape_3
+    {
+border: dashed 5px;
+ border-color:red green blue yellow;
+ background-color: rgb(196, 193, 193); 
+ outline:#000000 5px solid ;
+    }
+    .elements
+    {
+       display: block; 
+       width:400px;
+       margin: auto; 
+       text-align: left;
+
+
+    }
+    .element-1
+    {
+outline:rgb(196, 193, 193) 5px solid ;
+background-color: rgb(196, 193, 193);
+border-left: solid rgb(255, 0, 140);
+padding: 20px 40px;
+    }
+    .element-2
+    {
+ outline:rgb(196, 193, 193) 5px solid ;
+background-color:rgb(196, 193, 193);
+border-left: solid blue ;
+padding: 20px 40px;
+visibility: hidden;
+    }
+    .element-3
+    {
+outline:rgb(196, 193, 193) 5px solid ;
+background-color:rgb(196, 193, 193);
+border-left: solid green ;
+padding: 20px 40px;
+    }
