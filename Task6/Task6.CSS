@@ -1,0 +1,61 @@
+.Task1
+{
+    background-color:red;
+    color: #ffffff ;
+    margin: auto;
+    margin-left: 500px;
+    width: fit-content;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 400px;
+    border:solid 10px white;
+}
+
+.Task2
+{
+     text-align: Center;
+    font-size: x-large;
+     font-family: sans-serif;
+}
+.one
+{
+    text-transform:uppercase;
+}
+.Two
+{
+    text-transform:capitalize;
+}
+.Three
+{
+     text-transform:lowercase;
+}
+
+.element1
+{
+    display:block ;
+    Margin:auto;
+   Width: 400px;
+   background-color:rgb(196,193,193); 
+   Padding:40px;
+   border-bottom: solid 30px white;
+}
+.element2
+{
+    display:block ;
+    Margin:auto;
+   Width: 400px;
+   background-color:rgb(196,193,193); 
+   Padding:40px;
+   border-bottom: solid 30px white;
+}
+.element3
+{
+    display: block;
+    Margin:auto;
+   Width: 400px;
+   background-color:rgb(196,193,193); 
+   Padding:40px;
+   white-space:nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
