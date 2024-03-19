@@ -1,0 +1,104 @@
+/*Task1*/
+table
+{
+    Width:80%;
+    border-spacing: 0px;
+   margin-left: 20px;
+}
+table tbody td 
+{ padding:5px;
+  background-color: rgb(196, 193, 193);
+  border: 1px solid white;
+  text-align: center;
+}
+table thead th
+{
+text-transform: capitalize;
+text-align: center;
+color: white;
+font-size: large;
+background-color:rgb(124, 120, 120) ;
+border: 1px solid white;
+}
+.View
+{
+    background-color: rgb(0, 0, 255);
+    color: whitesmoke;
+}
+ .Delete
+ {
+    background-color: rgb(255, 38, 0);
+    color: whitesmoke;
+}
+/*Task2*/
+.boxes
+{
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: rgb(196, 193, 193);
+    width: 40%;
+    outline: 15px solid rgb(196, 193, 193);
+}
+ li 
+{
+background-color:white ;
+margin-bottom: 15px;
+margin-right: 15px;
+
+}
+ul{
+    list-style: circle inside;
+}
+/*Task3*/
+.Full
+{
+    background-color: rgb(196, 193, 193);
+    text-align: center;
+    margin: auto;
+    width:50%;
+    padding:15px;
+    font-size: large;
+}
+.full_width
+{ display: Flex ;
+    justify-content: space-between;
+ p{
+width: 100%;
+padding: 20px;
+margin:10px;
+background-color:grey ;
+}
+}
+.one-third
+{ display: Flex ;
+    justify-content: space-between;
+p{
+  width:33.33% ; 
+background-color:grey;
+padding: 20px;
+margin:10px;
+ }
+}
+.half
+{display: Flex ;
+    justify-content: space-between;
+ p{
+    width:50%;
+background-color:grey;
+padding: 20px;
+margin:10px;
+ 
+  }
+}
+.quarter
+{
+    display: Flex ;
+    justify-content: space-between;
+    p{
+       width:25% ;
+   background-color:grey;
+   padding: 20px;
+   margin:10px;
+    
+     }
+}
