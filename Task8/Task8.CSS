@@ -1,0 +1,167 @@
+/*Task1*/
+.One
+{ display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color:rgba(201, 198, 196, 0.856) ; 
+    width:300px;
+    height:60px; 
+    padding-bottom: 15px;
+    font-size: large;
+}
+.One:empty
+{
+    background-color:red ;
+}
+/*Task2*/
+p{
+display: grid;
+position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 5px;
+ text-align: left;
+  background-color:rgba(201, 198, 196, 0.856) ;
+  width:450px ;
+  height: 50px;
+  border-left:5px solid rgb(173, 14, 89) ;
+}
+p::after
+{   content:" ";
+    position: absolute;
+    align-items: center;
+    width:150px ;
+    height:70px;
+    left: -25px;
+    Top:0px;
+    border-left:25px solid rgb(173, 14, 89) ;
+    clip-path: polygon(100% 0, 100% 100%, 0% 50%);
+}
+
+p::before
+{
+    content:attr(data-person);
+    position: absolute;
+    width:50px ;
+    height: 20px;
+    padding: 5px;
+    background-color:rgba(201, 198, 196, 0.856) ; 
+    left: -105px;
+    Top: 0px;
+    margin :20px;
+}
+/*Task3*/
+.Task-3
+{
+    display:flex;
+    justify-content: space-evenly;
+    position: relative;
+    text-align: center;
+}
+.Three
+{   counter-increment: numbers;
+    border: 5px solid black;
+    border-radius: 50px;
+    width:100px;
+    height:100px;
+    background-color: rgba(201, 198, 196, 0.856) ; 
+    box-shadow: -6px -6px  rgb(173, 14, 89),
+                 6px 6px blue ;
+}
+.Three::before
+{   display:flex;
+    justify-content:center;
+    content: counter(numbers);
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+    border-radius: 20px;
+    top: -10px;
+}
+.Three::after
+{
+    display:flex;
+    justify-content:center;
+    content: "ELement";
+    position: absolute;
+    margin:auto;
+    margin: 10px;
+    padding: 8px;
+    padding-top: 15px;
+    Top:10px;
+    font-size: large;
+    font-weight: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Task4*/
+.Task-4
+{ display:flex;
+    justify-content:space-between;
+    position: relative;
+    width: 550px;
+    margin: auto;
+}
+.part-1
+{
+    background-color:rgba(196, 193, 193, 0.644);
+    width: 400px;
+    height: 240px;
+    text-align: center;
+    padding:20px;
+}
+.top
+{   margin: auto;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    background-color:#03a9f4;
+    border-radius: 5px;
+    width:90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.information
+{ display: flex;
+    justify-content: center;
+     margin: auto;
+     width: 80%;
+     height:40%;
+    text-align: center;
+    border-radius: 60%;
+    background-color:rgba(145, 137, 137, 0.753);
+     
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200px;
+    font-size: xx-large;
+  margin-top: 40px;
+    padding: 30px;
+}
+.line
+ {
+    border: #03a9f4 1px solid;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.line::before
+ {
+    content: "or";
+    background-color: #03a9f4;
+    text-align: center;
+    color: #fff;
+    height: 300px;
+    border-radius: 50%;
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
