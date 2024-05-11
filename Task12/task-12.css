@@ -1,0 +1,87 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+body
+{
+background-color: black;
+}
+h1
+{color: antiquewhite;
+    text-align: center;
+    font-size: larger;
+}
+h3
+{margin: auto;
+    width:150px;
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    color:rgb(255, 0, 128);
+    border:rgb(255, 0, 128) 10px dashed;
+
+}
+.loading , .Scale
+{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.loading div
+{
+    width: 20px;
+    height: 20px;
+    background-color:rgb(255, 0, 128);
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+.loading .Two
+{
+    animation-delay: 0.3s;
+}
+.loading .Three
+{
+    animation-delay: 0.6s;
+}
+@keyframes up-and-down{
+to{
+    opacity: 0.2;
+    transform: translateY(-20px);
+}
+}
+
+.Scale div
+{
+    width: 30px;
+    height: 60px;
+    border-radius: 40%;
+    margin: 0 20px;
+    animation-name:Scale-effect;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes Scale-effect
+    { 0%
+        { background-color: white;
+       
+        transform: Scale(1);
+    }
+    50%
+        { background-color: rgb(255, 0, 64);
+       
+        transform: Scale(1.5);
+    }
+    100%
+        { background-color: rgb(255, 0, 128);
+        
+        transform: Scale(2);
+    }
+    }
