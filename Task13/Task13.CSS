@@ -1,0 +1,475 @@
+*
+{
+    padding:0;
+    margin: 0;
+
+}
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+a:hover
+{
+    color: orangered;
+}
+h1
+{
+    color: orangered;
+    font-weight: bold;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 100px ;
+    padding: 30px;
+}
+/*nav bar*/
+nav
+{ display: inline-flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+width: 100%;
+    line-height: 100px;
+    margin:0px;
+}
+nav  .logo img
+{ padding-left: 30px;
+    margin-left: 30px;
+    margin: auto;
+}
+nav ul, footer ul
+{
+    list-style-type: none;
+
+}
+nav li
+{
+    display: inline-flex;
+    justify-content: space-between;
+   padding-left: 20px;
+    
+}
+nav ul li a ,.footer-element ul li a
+{  
+    color: white;
+    text-decoration: none;
+
+    font-weight: 400;
+   
+}
+
+
+/*End nav bar*/
+/*start banner section*/
+#Home h3
+{ display:flex;
+    display: flex;
+    text-align:left;
+    color:black;
+    font-size: 50px;
+    font-weight: 300;
+    margin: auto;
+    margin:0px 40px;
+    line-height: 100px;
+}
+#Home h1
+{  
+     margin: auto;
+    display: flex;
+    font-weight:800px ;
+    color: white;
+    font-size: 80px;
+    text-align:left;
+    line-height: 100px;
+    margin-top: -15px;
+    
+}
+.paragraph
+{
+    text-align:left;
+    color:white;
+    font-size: large;
+    margin: auto;
+    margin:30px;
+    padding: 20px;
+}
+.Banner
+{     height: 90vh;
+    background-image: url(images/banner-bg.png);
+    background-repeat: no-repeat;
+   background-origin:inherit;
+   background-size: cover;
+   text-align: left;
+   font-size: 80px;
+   margin: auto;
+
+}
+.Banner a , .About-Us a , .Gallery a ,.card-content a
+{
+   border: 8px black solid; 
+   color:white;
+   background-color: black;
+   text-decoration: none;
+   padding:5px ;
+   margin: auto;
+
+   
+}
+.Banner a:hover,  .About-Us a:hover , .Gallery a:hover
+{
+    background-color: orangered;
+    border:8px orangered solid;
+}
+.Banner .slide a 
+{ 
+    display: inline-flex;
+    justify-content: center;
+    border: 2px white solid; 
+   color:black; 
+   background-color: white;
+   width:min-content;
+   margin: auto;
+   padding: 15px;
+   text-align: center;
+}
+
+.slide
+{   text-align: center;
+    padding: 40px;
+    margin: auto;
+   
+}
+.slide a:hover
+{
+    color: white;
+background-color: orangered;
+}
+/*Start About section */
+.About-Us 
+{ 
+    background-color: white;
+    height: 100vh;
+    display:inline-flex;
+    justify-content:flex-start;
+}
+.About-Us .detail
+    {
+        text-align:left;
+        color:gray;
+        font-size: large;
+        margin: auto;
+        margin:30px;
+        padding: 20px;
+        position: absolute;
+    }
+    #About a
+    {
+        margin: 50px 25px;
+     
+    }
+    #About  img
+    { float: right;
+    height: 550px;
+    width: 500px;
+    padding: 150px 200px;
+    margin: 0 450px;
+    margin-top: -15px;
+    }
+/* Gallery section*/
+.Gallery
+{
+    height: 230vh;
+    background-color: white;
+}
+#Gallery h1
+{  margin: -50px 0;
+text-align: center;
+}
+#Gallery p
+{ color:gray;
+    font-size: large;
+    margin: auto;
+    margin:70px;
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: center;
+}
+.Gallery .gallery-images
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   
+}
+.Gallery .gallery-images img
+{ 
+    position: relative;
+        margin-left: 40px;
+        width: 300px;
+        height: 300px;
+        transition: all 0.5s ease;
+        margin-bottom: 40px;
+}
+
+.Gallery a
+{
+    margin: auto;
+    align-items: center;
+    margin: 40px 550px;
+  padding: 10px 30px;
+  margin-bottom: 150px;
+    
+ 
+}
+/*start Services section*/
+.Services
+{
+    height:100vh;
+    background-image: url(images/services-bg.png); 
+    background-repeat: no-repeat;
+    background-origin:inherit;
+    background-size: cover;
+    text-align: center;
+    font-size: 80px;
+    margin: auto;
+   
+}
+#Services h1
+{
+    color: white;
+}
+#Services p
+{ color:white;
+    font-size: large;
+    margin: auto;
+    margin:40px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+}
+.Services-details
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 150px;
+}
+.card-content
+{
+    width: 325px;
+    background-color: orangered;
+    margin: 20px;
+    padding: 16px;
+    transition: all 0.5s ease;
+}
+.card-content img
+{
+    width: 50px;
+  
+}
+.card-content h3
+{   color: white;
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: lighter;
+}
+.card-content h5
+{ color: white;
+font-size: 15px;
+line-height: 1.3;
+}
+.card-content a
+{ 
+    display: none;
+    justify-content: center;
+    border: 2px black solid; 
+   color:white; 
+   background-color:black;
+   width:50px;
+   margin: auto;
+   padding:15px 50px;
+   text-align: center;
+   font-size: 14px;
+
+}
+.card-content:hover
+{ 
+    width: 325px;
+    background-color: white;
+}
+.card-content:hover
+{ h3,h5
+    {
+color: black;
+}
+
+    a 
+    {
+        display: inline;
+    }
+}
+/*start Testimonial section*/
+.Testimonial
+{   height: 80vh;
+    background-color: white;
+}
+.Testimonial h1
+{
+    text-align: left;
+    margin: auto;
+    margin:30px 50px;
+    margin-bottom: 0px;
+}
+.Testimonial p
+{
+color: grey; 
+margin: auto;
+margin:10px 80px;
+text-align: left;
+}
+
+.Testimonial span{
+    display: inline-block;
+    color:orangered;
+    font-size: 18px;
+    font-weight: 800;
+    transform: translate(5rem ,-0.7rem);
+}
+.Testimonial img{
+    transform: translate(8rem,-0.6rem);
+}
+.Testimonial .MONILA{
+    border-left: 3px solid ;
+    border-right: 3px solid;
+    padding: 0 15px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.Testimonial .MONILA::before{
+    content: "";
+    width: 5rem ;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+} 
+.Testimonial .MONILA::after{
+    content: "";
+    width: 5rem ;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.One,.Two,.Three
+{   display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+     border: grey 5px solid;
+    width: 50px;
+    height: 15px;
+    border-radius: 20%;
+    background-color: gray;
+    margin: auto;
+    margin: 150px 15px;
+    
+}
+.One
+{
+    margin-left: 500px;
+    
+}
+.One:hover,.Two:hover,.Three:hover
+{
+    border:orangered 5px solid; 
+    background-color: orangered;
+}
+/*Start Contact us Section*/
+#Contact
+{ height: 130vh;
+ text-align: center;
+ display: flex;
+flex-direction: column;
+
+}
+#Contact h1
+{   display: inline-flex;
+    justify-content: center;
+    margin:auto;
+    text-align: center;
+    margin:50px 450px;
+}
+.form{
+    display: flex;
+    padding: 15px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-image: url(images/img-10.png);
+    background-size: cover;
+    padding: 2rem 5rem ;
+    width: 40%;
+}
+form input{
+    padding: 1.5rem 2rem;
+    border-radius: 3rem;
+}
+textarea{
+    padding: 3.5rem;
+    border-radius: 3rem;
+}
+form button{
+    background-color: orangered;
+    border-radius: 3rem;
+    margin: .55rem auto;
+    border:5px orangered solid;
+    color: white;
+   padding: 0 20px;
+}
+form button:hover
+{ background-color: white;
+    border:5px white solid;
+    color: black;
+}
+/*Start footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(41, 38, 38);
+    color: white;
+    padding: 5rem 7rem;
+    flex: 1;
+}
+footer h3{
+    display: inline-flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 2rem;
+}
+footer img{
+    width: .7rem;
+    margin-right: .5rem;
+}
+
+.finish 
+{ background-color: white;
+    margin-left: 450px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.finish a
+{ color: black;
+    text-decoration: none;
+
+}
+
