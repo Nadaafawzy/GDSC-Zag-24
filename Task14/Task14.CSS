@@ -1,0 +1,307 @@
+*
+{padding:0 ;
+margin: 0%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root
+{
+    --main:black;   
+    --alternative:white;
+    --colored:grey;
+}
+a
+{
+color: var(--alternative);
+text-decoration: none;
+}
+a:hover
+{
+    background-color: var(--colored);
+    color: var(--main);
+    cursor: cell;
+}
+/*Start nav bar*/
+ul li
+{
+    list-style-type: none;
+}
+nav,.links
+{
+    display: inline-block;
+    justify-content: center;
+    height: 10vh;
+    background-color: var(--main);
+margin: auto;
+width: 100%;
+
+}
+nav{
+    position: sticky;
+}
+nav li
+{
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-top: 25px;
+    padding-right: 20px;
+    margin: auto;
+}
+ul li a
+{
+    font-size: small;
+}
+/*Start banner*/
+.banner
+{
+    height: 70vh;
+    background-image: url(images/house1.jpg);
+    background-repeat: no-repeat;
+    filter: grayscale(50%);
+background-size: cover;
+}
+.banner h1
+{
+    display: flex;
+    justify-content: center;
+    margin: auto ;
+    color: var(--alternative);
+    text-align: center;
+    font-size:100px;
+    font-weight: 300;
+    padding-top: 100px;
+
+}
+.details
+{
+    display: inline-flex;
+}
+.banner p 
+{
+    color:var(--alternative);
+    font-size: 15px;
+}
+.banner .time
+{
+    background-color: var(--main);
+    text-align: left;
+    width:fit-content;
+    margin-left: 20px;
+    margin-top: 30px;
+
+} 
+.banner .Address
+{  margin-left:950px;
+    text-align: right;
+    padding-top: 30px;
+}
+/*Start about Section*/
+.About
+{
+    background-color: var(--alternative);
+    height: 150vh;
+}
+.About h5, .Menu h5, .Where h5
+{
+    margin: auto;
+    margin-bottom: 40px;
+    margin-Top: 40px;
+    text-align: center;
+    background-color: var(--main);
+    color: var(--alternative);
+    width:fit-content;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.About p ,.area ,.Where p
+{
+    margin: auto;
+    margin: 15px 25%;
+    text-align: left;
+    color: var(--main);
+    font-size: large;
+}
+.About div
+{
+    display: block;
+    margin: auto;
+    margin: 15px 25%;
+    text-align: left;
+    position: relative;
+    background-color: rgba(5, 78, 78, 0.034); 
+padding:10px 5px;
+
+}
+div::after
+{
+    content: " ";
+    position: absolute;
+    width:7.5px;
+    height: 105px;
+    background-color: grey;
+    left: -10px;
+    top:0;
+    margin-bottom:20px;
+}
+.About img ,.Menu img ,.Where img
+{
+    margin: auto;
+    margin: 15px 25%;
+    width:50%;
+    filter: grayscale(60%) ;
+
+}
+.About span
+{ 
+font-weight: bold;
+}
+/*Start Menu Section*/
+.Menu h5
+{
+    margin: auto; 
+    margin-top: -50px;
+
+}
+.links
+{ display: inline-flex;
+    justify-content: space-evenly;
+    margin:30px auto;
+    margin: 15px 25%;
+    width:50%;
+    background-color: var(--alternative);
+    /* border:rgba(128, 128, 128, 0.267) 2px solid;*/
+    box-shadow:  0 0 30px 0 rgba(128, 128, 128, 0.267) ;
+margin-bottom: 0px;
+}
+.links a
+{
+    color: var(--main);
+    font-weight: bold;
+}
+.links li
+{
+    display: inline-flex;
+    justify-content: space-around;
+    padding-right: 150px;
+padding-left: 120px;
+margin-top: 25px;
+}
+#Eat:hover ,#Drink:hover
+{
+    width:3rem;
+    background-color: var(--colored);
+    color:var(--alternative);
+}
+.Eat 
+{
+    height: 50vh;
+    margin:30px auto;
+    margin: 15px 25%;
+    /*border:rgba(128, 128, 128, 0.267) 2px solid;*/
+    box-shadow: 0px 0px 30px 0px rgba(128, 128, 128, 0.267) ;
+    margin-top: 0;
+    padding-left: 15px;
+}
+.Eat p
+{
+    color: var(--colored);
+}
+/*Start Where section*/
+.first
+{
+    background-color: var(--main);
+    color: var(--alternative);
+}
+.information
+{  align-items: center;
+}
+input,textarea
+{
+    border:rgba(128, 128, 128, 0.267) 2px solid;
+    background-color: var(--alternative);
+    margin: 15px 25%;
+    width:50%;
+    height: 3rem;
+    
+}
+.submit
+{
+    background-color:var(--main) ;
+    color: var(--alternative);
+    width: fit-content;
+    padding:15px;
+}
+/*Start footer*/
+footer 
+{  height: 15vh;
+    margin:30px 550px;
+}
+footer a{
+    color: var(--main);
+    text-decoration: underline;
+}
+/*Responsive*/
+@media (max-width:800px) and (min-width:500px) {
+    .About {
+        p, img{
+            max-width: 30rem;
+        }
+    }
+
+    .Menu {
+        .all{margin-top: 5rem;} 
+        .links, .Eat, img{
+            max-width: 30rem;
+        }
+        .links
+{
+    display: inline;
+    margin-bottom: 4rem;
+}
+    }
+
+    .where {
+            p , img, div {
+                max-width: 30rem;
+            }
+        }
+        form{
+            input {
+                max-width: 30rem;
+            }
+        }
+    }
+
+@media (max-width:500px) {
+    .About {
+        div, img {
+            max-width: 20rem;
+        }
+    }
+
+    .Menu {
+        .all
+        { padding:2rem;
+            margin-top: 5rem;
+        }
+        .links, .Eat, img{
+            max-width: 20rem;
+        }
+        .links
+        {
+            display:inline-block;
+        }
+    }
+
+    .where {
+            p , img, div {
+                max-width: 20rem;
+            }
+        }
+        form{
+            input {
+                max-width: 20rem;
+            }
+        }
+    }
